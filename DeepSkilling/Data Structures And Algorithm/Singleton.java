@@ -13,7 +13,7 @@ class Singleton {
     public void showMessage() {
         System.out.println("Singleton Instance Created");
     }
-}
+
 
 public class Program {
     public static void main(String[] args) {

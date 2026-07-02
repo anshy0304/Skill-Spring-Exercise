@@ -23,7 +23,7 @@ class ShapeFactory {
         }
         return null;
     }
-}
+.
 
 public class Program {
     public static void main(String[] args) {
