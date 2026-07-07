@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class LibraryServiceTest {
+class BookServiceTest {
 
     @Test
     void shouldReturnWelcomeMessage() {
-        LibraryService service = new LibraryService();
-        assertEquals("Library management application is ready!", service.getWelcomeMessage());
+        BookService service = new BookService("City Central Library");
+        assertEquals("Welcome to City Central Library, where books are always available!", service.getWelcomeMessage());
     }
 }
