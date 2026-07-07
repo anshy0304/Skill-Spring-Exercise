@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BookServiceTest {
 
     @Test
-    void shouldReturnWelcomeMessage() {
-        BookService service = new BookService("City Central Library");
-        assertEquals("Welcome to City Central Library, where books are always available!", service.getWelcomeMessage());
+    void shouldExposeLibraryName() {
+        BookService service = new BookService();
+        assertEquals("City Central Library", service.getLibraryName());
     }
 }

@@ -1,14 +1,11 @@
 package com.example.library;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class BookService {
 
-    private final String libraryName;
-
-    public BookService(String libraryName) {
-        this.libraryName = libraryName;
-    }
-
-    public String getWelcomeMessage() {
-        return "Welcome to " + libraryName + ", where books are always available!";
+    public String getLibraryName() {
+        return "City Central Library";
     }
 }
