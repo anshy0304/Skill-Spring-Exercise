@@ -24,4 +24,12 @@ class CountryControllerTest {
                 .andExpect(jsonPath("$.code").value("IN"))
                 .andExpect(jsonPath("$.name").value("India"));
     }
+
+    @Test
+    void getCountryByCodeReturnsIndiaCaseInsensitive() throws Exception {
+        mockMvc.perform(get("/countries/in"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.code").value("IN"))
+                .andExpect(jsonPath("$.name").value("India"));
+    }
 }
